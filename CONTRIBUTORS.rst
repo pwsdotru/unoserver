@@ -15,3 +15,4 @@ Contributors
 * Witiko, https://github.com/Witiko
 * Prpl, https://github.com/prpladmin
 * Julian Anthes, https://github.com/uhntiss
+* Aleksandr Novikov, https://github.com/pwsdotru
