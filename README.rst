@@ -100,7 +100,7 @@ Unoserver
   unoserver [-h] [-v] [--interface INTERFACE] [--uno-interface UNO_INTERFACE] [--port PORT] [--uno-port UNO_PORT]
             [--daemon] [--executable EXECUTABLE] [--user-installation USER_INSTALLATION]
             [-p/--libreoffice-pid-file LIBREOFFICE_PID_FILE] [--conversion-timeout CONVERSION_TIMEOUT]
-            [--stop-after STOP_AFTER] [--verbose] [--quiet] [-f/--logfile logfile]
+            [--stop-after STOP_AFTER] [--temp-dir TEMP_DIR] [--verbose] [--quiet] [-f/--logfile logfile]
 
 * `-v, --version`: Display version and exit.
 * `--interface`: The interface used by the XMLRPC server, defaults to "127.0.0.1"
@@ -114,6 +114,7 @@ Unoserver
   If started in daemon mode, the file will not be deleted when unoserver exits.
 * `--conversion-timeout`: Terminate Libreoffice and exit if a conversion does not complete in the given time (in seconds).
 * `--stop-after`: Terminate Libreoffice and exit after the given number of requests.
+* `--temp-dir`: The directory to use for temporary files. Useful for avoiding permission issues with system temp directories (e.g., C:\Windows\Temp on Windows). If not specified, uses system default temp directory.
 * `--verbose`: Add debug information as output
 * `--quiet`: Only output errors and warnings
 * `-f`, `--logfile`: Write logs to a file (defaults to stderr)
