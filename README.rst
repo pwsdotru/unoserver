@@ -110,7 +110,7 @@ Unoserver
 * `--daemon`: Deamonize the server
 * `--executable`: The path to the LibreOffice executable
 * `--user-installation`: The path to the LibreOffice user profile, defaults to a dynamically created temporary directory
-* `--p`, `--libreoffice-pid-file`: If set, unoserver will write the Libreoffice PID to this file.
+* `-p`, `--libreoffice-pid-file`: If set, unoserver will write the Libreoffice PID to this file.
   If started in daemon mode, the file will not be deleted when unoserver exits.
 * `--conversion-timeout`: Terminate Libreoffice and exit if a conversion does not complete in the given time (in seconds).
 * `--stop-after`: Terminate Libreoffice and exit after the given number of requests.
