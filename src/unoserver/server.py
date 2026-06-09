@@ -643,7 +643,10 @@ def main():
             cmd.remove("--daemon")
 
         if args.logfile:
-            cmd.remove("--logfile")
+            if "--logfile" in cmd:
+                cmd.remove("--logfile")
+            if "-f" in cmd:
+                cmd.remove("-f")
             cmd.remove(args.logfile)
 
             with open(args.logfile, "ab") as logfile:

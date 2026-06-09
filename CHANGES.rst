@@ -7,6 +7,8 @@
 
 - Added the LibreOffice version to the info endpoint, and printed it in `unoping`.
 
+- Fixed a bug in unoservers handling of the `-f` parameter.
+
 
 3.6 (2025-11-24)
 ----------------
