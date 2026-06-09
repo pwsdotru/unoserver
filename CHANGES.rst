@@ -1,7 +1,9 @@
 3.7 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Added a --temp-dir parameter to specify a non-default temporary directory.
+
+- Improved logging in `unocompare`.
 
 
 3.6 (2025-11-24)
