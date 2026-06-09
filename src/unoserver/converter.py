@@ -117,6 +117,23 @@ class UnoConverter:
         self._export_filters = None
         self._import_filters = None
 
+    def uno_info(self):
+        config_provider = self.service.createInstanceWithContext(
+            "com.sun.star.configuration.ConfigurationProvider", self.context
+        )
+    
+        # Set up arguments to target the specific node path
+        prop = PropertyValue(Name="nodepath", Value="/org.openoffice.Setup/Product")
+    
+        # Access the configuration node
+        config_access = config_provider.createInstanceWithArguments(
+            "com.sun.star.configuration.ConfigurationAccess", (prop,)
+        )
+        
+        # Extract the full version string
+        version = config_access.getByName("ooSetupVersionAboutBox")
+        return version
+    
     def find_filter(self, import_type, export_type):
         for export_filter in self.get_available_export_filters():
             if export_filter["DocumentService"] != import_type:

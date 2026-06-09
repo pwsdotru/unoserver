@@ -285,11 +285,13 @@ class UnoServer:
                     self.conv.get_available_export_filters()
                 )
 
+                libreoffice_version = self.conv.uno_info()
                 return {
                     "unoserver": __version__,
                     "api": API_VERSION,
                     "import_filters": import_filters,
                     "export_filters": export_filters,
+                    "libreoffice_version": libreoffice_version,
                 }
 
             @server.register_function

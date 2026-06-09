@@ -5,6 +5,8 @@
 
 - Improved logging in `unocompare`.
 
+- Added the LibreOffice version to the info endpoint, and printed it in `unoping`.
+
 
 3.6 (2025-11-24)
 ----------------
