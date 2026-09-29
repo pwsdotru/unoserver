@@ -235,6 +235,7 @@ class UnoConverter:
         You must specify the inpath or the indata, and you must specify and outpath or a convert_to.
         """
         input_props = (PropertyValue(Name="ReadOnly", Value=True),)
+        input_props +=(PropertyValue(Name="RepairPackage", Value=True),)
         if password:
             input_props += (PropertyValue(Name="Password", Value=password),)
         if infiltername:
